@@ -1,0 +1,25 @@
+{
+  "name": "neuroload",
+  "version": "0.4.1",
+  "private": true,
+  "type": "module",
+  "description": "Local, budget-aware first-viewport prediction for Chrome Manifest V3",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "browser:install": "node scripts/install-browser.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs && node tests/extended-browser.mjs && node tests/security-browser.mjs && node tests/automatic-browser.mjs",
+    "bench:matrix": "node bench/matrix.mjs",
+    "bench": "node bench/run.mjs",
+    "check": "npm run build && npm test && npm run test:browser",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright": "1.64.1"
+  }
+}

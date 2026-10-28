@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-28T09:03:41.133Z",
+  "browser": "156.0.8078.4",
+  "checks": [
+    "global activation is explicit and registers HTTPS without a typed site list",
+    "an unlisted ordinary HTTPS site learns automatically",
+    "government pages pause before learning or speculative requests",
+    "the trusted popup explains the government classification and denial",
+    "approval learns only a temporary model for that tab",
+    "approved public government navigation can prepare its initial resources",
+    "a forged approval nonce cannot authorize another bank tab",
+    "private paths remain blocked despite an active sensitive consent",
+    "expiry removes access and requires a new decision",
+    "closing the tab clears its sensitive request and temporary model"
+  ],
+  "scope": "Synthetic .test domains mapped to localhost; pregranted harness permission; native host prompts remain manual."
+}

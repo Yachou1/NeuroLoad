@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "fixture grant and registered isolated content script",
+    "real viewport learning excludes secondary resources",
+    "trusted hover performs document-only speculation plus critical subresources",
+    "one plan per document despite further hover",
+    "initial preload is reused by real navigation without hidden rendering",
+    "options page renders and saves strict mode",
+    "unknown, parameterized, sensitive and cross-origin links emit no hints in measured mode",
+    "sensitive URLs and password forms are never learned",
+    "existing site rules and an offline connection suppress speculation",
+    "removing allowed origin deletes its local data and unregisters content script",
+    "unmodified production extension starts without any site access"
+  ],
+  "errors": [],
+  "browser": "156.0.8078.4",
+  "at": "2026-10-28T07:31:00.550Z"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Europe/Brussels",
+  "version": "0.3.0",
+  "unitTests": 68,
+  "browserChecks": 48,
+  "totalChecks": 116,
+  "browser": "156.0.8078.4",
+  "buildSha256": {
+    "manifest.json": "0dbb0f83b97c8c776ebfe675d42ffa3f189459636001d522fb70b1e63d23a080",
+    "background.js": "fb63087ca7927b135728548b8684e1bf177840b662ba4c35ba9996dc89e9f458",
+    "core.js": "b282a4e5ae4c6924e4afaed3dfc89bf82c117322878eb7abc6e920a32dd65766",
+    "content.js": "25016d50a838f5dfde8a3f4b12d7b487446225bae8d786f34322d4b5f3fa5c65",
+    "validation.js": "c74cae2eb167f89304a40653e0f6733bd45bf70ae05a92f4f28db1926dd0041e",
+    "options.js": "5e9c08a3a7bdb770bded29cb8b12aaad7b4bc5d7d7de293b0d6503fde1a128eb"
+  },
+  "npmAuditKnownVulnerabilities": 0,
+  "limitations": [
+    "Local audit, no zero-vulnerability guarantee.",
+    "Chrome stable native optional-host grant prompts remain manual.",
+    "Synthetic browser tests; main API limitations remain."
+  ]
+}

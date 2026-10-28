@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-28T09:03:19.799Z",
+  "browser": "156.0.8078.4",
+  "checks": [
+    "a short glance emits only the small document, not CSS or hero",
+    "a sustained hover emits the minimal learned set once",
+    "hovering an unknown page does not consume a later known prediction",
+    "pointer movement inside a nested link preserves dwell time",
+    "newly inserted sensitive form cancels the asset phase",
+    "keyboard navigation gets the same staged critical resources",
+    "focus departure cancels the pending hero download",
+    "download links never trigger speculation",
+    "new tab links never trigger speculation",
+    "nofollow links never trigger speculation",
+    "per-link opt out links never trigger speculation",
+    "site opt out is respected without observing the whole DOM",
+    "different viewport rejects the old image profile",
+    "tight page budget excludes the hero while retaining document and CSS",
+    "daily cap rejects the entire plan before any speculative request",
+    "CSS already loaded by the source is not prefetched again",
+    "/responsive: initial learning rejects unsupported image or navigation",
+    "/offscreen: initial learning rejects unsupported image or navigation",
+    "/failure: initial learning rejects unsupported image or navigation",
+    "/redirect: initial learning rejects unsupported image or navigation",
+    "a late hero does not expand the initial learning window",
+    "idle learning predicts the document but requires intent for its assets",
+    "CSP headers are preserved while native behavior is observed"
+  ],
+  "errors": [],
+  "observations": {
+    "cspDocumentPrefetch": true
+  }
+}

@@ -1,0 +1,937 @@
+{
+  "at": "2026-10-28T09:10:35.620Z",
+  "browser": "156.0.8078.4",
+  "os": "win32 10.0.26200",
+  "cpu": "11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz",
+  "iterations": 2,
+  "fixtureDelayMs": 110,
+  "leadTimeMs": 1000,
+  "viewport": "1200x800@1",
+  "cpuTimeDomain": "threadTicks",
+  "rows": [
+    {
+      "scenario": "/article",
+      "trial": 0,
+      "mode": "native",
+      "fcpMs": 396,
+      "lcpMs": 428,
+      "taskMs": 17.819,
+      "prepTaskMs": 29.391000000000002,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 0,
+      "speculativePayloadBytes": 0,
+      "postClickPayloadBytes": 67295,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 68802,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 396,
+        "lcp": 428,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 379.70000000298023,
+          "navigationId": 231,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 6.300000004470348,
+          "domainLookupStart": 6.300000004470348,
+          "domainLookupEnd": 6.300000004470348,
+          "connectStart": 6.300000004470348,
+          "secureConnectionStart": 0,
+          "connectEnd": 6.300000004470348,
+          "requestStart": 7.5,
+          "responseStart": 126,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 126,
+          "responseEnd": 128.30000000447035,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 132.10000000149012,
+          "unloadEventEnd": 132.10000000149012,
+          "domInteractive": 141.20000000298023,
+          "domContentLoadedEventStart": 141.20000000298023,
+          "domContentLoadedEventEnd": 141.30000000447035,
+          "domComplete": 379.6000000014901,
+          "loadEventStart": 379.70000000298023,
+          "loadEventEnd": 379.70000000298023,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 515,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 66987,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": null
+    },
+    {
+      "scenario": "/article",
+      "trial": 0,
+      "mode": "strict",
+      "fcpMs": 396,
+      "lcpMs": 396,
+      "taskMs": 20.989,
+      "prepTaskMs": 33.651,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 0,
+      "speculativePayloadBytes": 0,
+      "postClickPayloadBytes": 67295,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 68802,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 396,
+        "lcp": 396,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 367.5,
+          "navigationId": 9866,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 7.800000004470348,
+          "domainLookupStart": 7.800000004470348,
+          "domainLookupEnd": 7.800000004470348,
+          "connectStart": 7.800000004470348,
+          "secureConnectionStart": 0,
+          "connectEnd": 7.800000004470348,
+          "requestStart": 9,
+          "responseStart": 125.60000000149012,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 125.60000000149012,
+          "responseEnd": 126.60000000149012,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 130.10000000149012,
+          "unloadEventEnd": 130.10000000149012,
+          "domInteractive": 139.80000000447035,
+          "domContentLoadedEventStart": 139.80000000447035,
+          "domContentLoadedEventEnd": 139.80000000447035,
+          "domComplete": 367.3999999985099,
+          "loadEventStart": 367.3999999985099,
+          "loadEventEnd": 367.5,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 515,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 66987,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": {
+        "entries": []
+      }
+    },
+    {
+      "scenario": "/article",
+      "trial": 0,
+      "mode": "measured",
+      "fcpMs": 64,
+      "lcpMs": 64,
+      "taskMs": 20.268,
+      "prepTaskMs": 36.288999999999994,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 3,
+      "speculativePayloadBytes": 67295,
+      "postClickPayloadBytes": 0,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 69420,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Prefetch",
+          "bytes": 618,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Other",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Other",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 0,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 0,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 64,
+        "lcp": 64,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 23.100000001490116,
+          "navigationId": 9491,
+          "initiatorType": "navigation",
+          "deliveryType": "navigational-prefetch",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 6.299999997019768,
+          "domainLookupStart": 6.299999997019768,
+          "domainLookupEnd": 6.299999997019768,
+          "connectStart": 6.299999997019768,
+          "secureConnectionStart": 0,
+          "connectEnd": 6.299999997019768,
+          "requestStart": 6.299999997019768,
+          "responseStart": 6.299999997019768,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 6.299999997019768,
+          "responseEnd": 0,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 11.600000001490116,
+          "unloadEventEnd": 11.600000001490116,
+          "domInteractive": 21.899999998509884,
+          "domContentLoadedEventStart": 21.899999998509884,
+          "domContentLoadedEventEnd": 22,
+          "domComplete": 23,
+          "loadEventStart": 23.100000001490116,
+          "loadEventEnd": 23.100000001490116,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "low"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 0,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 0,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": {
+        "entries": [
+          {
+            "at": 1793178608077,
+            "bytes": 146878,
+            "pageId": "856891265:6672AE0DC4EBF8CFB09110C6BEB38F8B",
+            "requests": 3,
+            "to": "sha256:b51d52c0f16a1300ce6aecc33d1d76a4993614944dc894dabcb3847a779af9da"
+          }
+        ],
+        "lastAt": 1793178608077
+      }
+    },
+    {
+      "scenario": "/article",
+      "trial": 1,
+      "mode": "measured",
+      "fcpMs": 64,
+      "lcpMs": 64,
+      "taskMs": 21.326,
+      "prepTaskMs": 36.573,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 3,
+      "speculativePayloadBytes": 67295,
+      "postClickPayloadBytes": 0,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 69420,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Prefetch",
+          "bytes": 618,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Other",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Other",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 0,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 0,
+          "cached": true,
+          "fromPrefetchCache": true
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 64,
+        "lcp": 64,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 26.299999997019768,
+          "navigationId": 6866,
+          "initiatorType": "navigation",
+          "deliveryType": "navigational-prefetch",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 7.5,
+          "domainLookupStart": 7.5,
+          "domainLookupEnd": 7.5,
+          "connectStart": 7.5,
+          "secureConnectionStart": 0,
+          "connectEnd": 7.5,
+          "requestStart": 7.5,
+          "responseStart": 7.5,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 7.5,
+          "responseEnd": 0,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 13,
+          "unloadEventEnd": 13,
+          "domInteractive": 25.600000001490116,
+          "domContentLoadedEventStart": 25.600000001490116,
+          "domContentLoadedEventEnd": 25.600000001490116,
+          "domComplete": 26.299999997019768,
+          "loadEventStart": 26.299999997019768,
+          "loadEventEnd": 26.299999997019768,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "low"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 0,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 0,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": {
+        "entries": [
+          {
+            "at": 1793178616495,
+            "bytes": 146878,
+            "pageId": "1374803272:30FCFED3E9AC325726CBA300D7537447",
+            "requests": 3,
+            "to": "sha256:b51d52c0f16a1300ce6aecc33d1d76a4993614944dc894dabcb3847a779af9da"
+          }
+        ],
+        "lastAt": 1793178616495
+      }
+    },
+    {
+      "scenario": "/article",
+      "trial": 1,
+      "mode": "strict",
+      "fcpMs": 412,
+      "lcpMs": 428,
+      "taskMs": 22.999,
+      "prepTaskMs": 31.119999999999997,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 0,
+      "speculativePayloadBytes": 0,
+      "postClickPayloadBytes": 67295,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 68802,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 412,
+        "lcp": 428,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 378.8999999985099,
+          "navigationId": 9767,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 9.299999997019768,
+          "domainLookupStart": 9.299999997019768,
+          "domainLookupEnd": 9.299999997019768,
+          "connectStart": 9.299999997019768,
+          "secureConnectionStart": 0,
+          "connectEnd": 9.299999997019768,
+          "requestStart": 14.199999995529652,
+          "responseStart": 125.60000000149012,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 125.60000000149012,
+          "responseEnd": 127.79999999701977,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 131.5,
+          "unloadEventEnd": 131.5,
+          "domInteractive": 143.29999999701977,
+          "domContentLoadedEventStart": 143.39999999850988,
+          "domContentLoadedEventEnd": 143.89999999850988,
+          "domComplete": 378.79999999701977,
+          "loadEventStart": 378.79999999701977,
+          "loadEventEnd": 378.8999999985099,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 515,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 66987,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": {
+        "entries": []
+      }
+    },
+    {
+      "scenario": "/article",
+      "trial": 1,
+      "mode": "native",
+      "fcpMs": 396,
+      "lcpMs": 412,
+      "taskMs": 14.389,
+      "prepTaskMs": 27.654,
+      "requests": 4,
+      "payloadBytes": 67709,
+      "speculativeRequests": 0,
+      "speculativePayloadBytes": 0,
+      "postClickPayloadBytes": 67295,
+      "secondarySpeculativeRequests": 0,
+      "cdpEncodedBytes": 68802,
+      "cdpRequests": [
+        {
+          "url": "http://127.0.0.1:63909/",
+          "type": "Document",
+          "bytes": 639,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/article",
+          "type": "Document",
+          "bytes": 618,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/critical.css",
+          "type": "Stylesheet",
+          "bytes": 424,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/hero.png",
+          "type": "Image",
+          "bytes": 66899,
+          "cached": false,
+          "fromPrefetchCache": false
+        },
+        {
+          "url": "http://127.0.0.1:63909/favicon.ico",
+          "type": "Other",
+          "bytes": 111,
+          "cached": false,
+          "fromPrefetchCache": false
+        }
+      ],
+      "metrics": {
+        "fcp": 396,
+        "lcp": 412,
+        "navigation": {
+          "name": "http://127.0.0.1:63909/article",
+          "entryType": "navigation",
+          "startTime": 0,
+          "duration": 368.20000000298023,
+          "navigationId": 782,
+          "initiatorType": "navigation",
+          "deliveryType": "",
+          "nextHopProtocol": "http/1.1",
+          "renderBlockingStatus": "non-blocking",
+          "contentType": "text/html",
+          "contentEncoding": "gzip",
+          "workerStart": 0,
+          "workerRouterEvaluationStart": 0,
+          "workerCacheLookupStart": 0,
+          "workerMatchedSourceType": "",
+          "workerFinalSourceType": "",
+          "redirectStart": 0,
+          "redirectEnd": 0,
+          "fetchStart": 5.9000000059604645,
+          "domainLookupStart": 5.9000000059604645,
+          "domainLookupEnd": 5.9000000059604645,
+          "connectStart": 5.9000000059604645,
+          "secureConnectionStart": 0,
+          "connectEnd": 5.9000000059604645,
+          "requestStart": 7,
+          "responseStart": 128.70000000298023,
+          "firstInterimResponseStart": 0,
+          "finalResponseHeadersStart": 128.70000000298023,
+          "responseEnd": 131.60000000149012,
+          "transferSize": 693,
+          "encodedBodySize": 393,
+          "decodedBodySize": 567,
+          "responseStatus": 200,
+          "serverTiming": [],
+          "unloadEventStart": 135.90000000596046,
+          "unloadEventEnd": 135.90000000596046,
+          "domInteractive": 143.40000000596046,
+          "domContentLoadedEventStart": 143.40000000596046,
+          "domContentLoadedEventEnd": 143.5,
+          "domComplete": 368.1000000014901,
+          "loadEventStart": 368.20000000298023,
+          "loadEventEnd": 368.20000000298023,
+          "type": "navigate",
+          "redirectCount": 0,
+          "activationStart": 0,
+          "criticalCHRestart": 0,
+          "notRestoredReasons": null,
+          "confidence": {
+            "randomizedTriggerRate": 0.4994798,
+            "value": "high"
+          }
+        },
+        "resources": [
+          {
+            "name": "http://127.0.0.1:63909/critical.css",
+            "bytes": 515,
+            "encodedBodySize": 215
+          },
+          {
+            "name": "http://127.0.0.1:63909/hero.png",
+            "bytes": 66987,
+            "encodedBodySize": 66687
+          },
+          {
+            "name": "http://127.0.0.1:63909/favicon.ico",
+            "bytes": 300,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "ledger": null
+    }
+  ],
+  "summaries": [
+    {
+      "scenario": "/article",
+      "mode": "native",
+      "n": 2,
+      "fcpMedian": 396,
+      "lcpMedian": 420,
+      "lcpP75": 428,
+      "payloadMedian": 67709,
+      "taskMedian": 16.104,
+      "requestMedian": 4,
+      "speculativeMedian": 0
+    },
+    {
+      "scenario": "/article",
+      "mode": "strict",
+      "n": 2,
+      "fcpMedian": 404,
+      "lcpMedian": 412,
+      "lcpP75": 428,
+      "payloadMedian": 67709,
+      "taskMedian": 21.994,
+      "requestMedian": 4,
+      "speculativeMedian": 0
+    },
+    {
+      "scenario": "/article",
+      "mode": "measured",
+      "n": 2,
+      "fcpMedian": 64,
+      "lcpMedian": 64,
+      "lcpP75": 64,
+      "payloadMedian": 67709,
+      "taskMedian": 20.797,
+      "requestMedian": 4,
+      "speculativeMedian": 67295
+    }
+  ],
+  "limitations": [
+    "Local synthetic fixture; no public-web performance claim.",
+    "Browser default preload settings; separate fresh profiles; cache cleared after training.",
+    "CPU proxy is renderer main-thread TaskDuration; extension worker/browser-wide CPU not included.",
+    "Server payload bytes exclude headers/TLS; CDP bytes may omit speculation work. Both raw series included.",
+    "Not a universal hard transferred-byte ceiling. Strict mode initiates zero speculative body downloads.",
+    "No-store tests document memory prefetch reuse separately from HTTP subresource caching."
+  ]
+}

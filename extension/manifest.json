@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "NeuroLoad — First viewport",
+  "version": "0.4.1",
+  "minimum_chrome_version": "122",
+  "description": "Locally predicts first-viewport resources on sites you allow.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "NeuroLoad — Status and consent",
+    "default_popup": "popup.html"
+  },
+  "incognito": "not_allowed",
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'"
+  }
+}

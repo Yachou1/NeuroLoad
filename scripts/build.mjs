@@ -1,0 +1,13 @@
+import { build } from 'esbuild';
+import { cp, readFile } from 'node:fs/promises';
+await build({ entryPoints: ['src/content.js'], bundle: true, format: 'iife', target: 'chrome122', outfile: 'extension/content.js', legalComments: 'none' });
+await build({ entryPoints: ['src/options.js'], bundle: true, format: 'esm', target: 'chrome122', outfile: 'extension/options.js', legalComments: 'none' });
+await build({ entryPoints: ['src/popup.js'], bundle: true, format: 'esm', target: 'chrome122', outfile: 'extension/popup.js', legalComments: 'none' });
+await cp('src/background.js', 'extension/background.js');
+await cp('src/core.js', 'extension/core.js');
+await cp('src/validation.js', 'extension/validation.js');
+await cp('src/site-policy.js', 'extension/site-policy.js');
+await cp('src/access.js', 'extension/access.js');
+const manifest = JSON.parse(await readFile('extension/manifest.json', 'utf8'));
+if (manifest.manifest_version !== 3 || manifest.host_permissions || manifest.content_scripts) throw new Error('Unexpected broad host access');
+console.log('NeuroLoad prêt : charger le dossier extension/ dans Chrome.');

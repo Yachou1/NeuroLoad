@@ -1,0 +1,8 @@
+node_modules/
+.work/
+dist/
+bench/results/*.json
+bench/results/*.md
+!bench/results/REFERENCE.md
+*.log
+.env*

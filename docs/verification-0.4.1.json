@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-28T09:12:12.3233969Z",
+  "version": "0.4.1",
+  "language": "English",
+  "unitTests": 95,
+  "unitFailures": 0,
+  "browserChecks": {
+    "browser": 11,
+    "extended-browser": 23,
+    "security-browser": 14,
+    "automatic-browser": 10
+  },
+  "browser": "156.0.8078.4",
+  "totalChecks": 153,
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "generatedFilesReproduced": true,
+  "benchmark": {
+    "modes": [
+      "native",
+      "strict",
+      "measured"
+    ],
+    "navigations": 6,
+    "interpretation": "Functional smoke; no statistical or public-web speed claim.",
+    "scenario": "/article"
+  },
+  "publicationTarget": "https://github.com/Yachou1/NeuroLoad",
+  "limitations": [
+    "Native host grant requires a human; isolated harness pregrants only test manifests.",
+    "Sensitivity detection is incomplete; automatic Chrome host permission is technically broad.",
+    "No exact wire-byte cap or zero-vulnerability claim.",
+    "Historical screenshots/fixtures may retain original language; no historical metrics changed.",
+    "Remote CI is separate from local verification."
+  ]
+}

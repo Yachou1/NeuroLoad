@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-28T08:46:51.494Z",
+  "browser": "156.0.8078.4",
+  "checks": [
+    "real content scripts cannot read protected extension storage",
+    "unprivileged scripts cannot call options-only operations",
+    "real BOOT replies expose neither settings nor browsing-history lists",
+    "page postMessage cannot forge extension commands or network hints",
+    "oversized and prototype-named messages are rejected in the browser",
+    "poisoned persisted resources cannot produce a plan",
+    "passive prediction respects /passive-nofollow before any hover",
+    "passive prediction respects /passive-download before any hover",
+    "passive prediction respects /passive-no-prefetch before any hover",
+    "extension UI CSP blocks outbound data even to an authorized host",
+    "Trusted Types blocks injected HTML without breaking the options UI",
+    "the options page cannot be embedded by a website",
+    "a live renderer flood is limited and the trusted UI stays usable",
+    "protected storage and authorized learning survive a browser restart"
+  ],
+  "observations": {
+    "storageDenied": true,
+    "flood": {
+      "limited": 75,
+      "ok": 5
+    },
+    "restartStorageDenied": true
+  }
+}

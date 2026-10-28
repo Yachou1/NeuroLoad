@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-28T08:48:29.3522997Z",
+  "version": "0.4.0",
+  "command": "npm run check",
+  "unitTests": 95,
+  "unitFailures": 0,
+  "browserChecks": {
+    "browser": 11,
+    "extended-browser": 23,
+    "security-browser": 14,
+    "automatic-browser": 10
+  },
+  "browser": "156.0.8078.4",
+  "totalChecks": 153,
+  "benchmark": {
+    "scenario": "/article",
+    "navigations": 6,
+    "modes": [
+      "native",
+      "strict",
+      "measured"
+    ],
+    "interpretation": "Functional smoke only; two samples per mode, no statistical or real-web claim."
+  },
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "generatedFilesReproduced": true,
+  "platform": "Windows, isolated Chromium profiles",
+  "limitations": [
+    "Native host-permission dialog requires a human click; test harness pregrants its copied manifest.",
+    "Domains and TLS keys are synthetic public test data. No real government or bank sites tested.",
+    "Sensitivity classification is incomplete and the optional automatic Chrome permission is technically broad.",
+    "No absolute transferred-byte ceiling or zero-vulnerability claim.",
+    "Stable Chrome and oldest supported version not manually verified."
+  ]
+}
