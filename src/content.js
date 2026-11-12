@@ -77,7 +77,7 @@ async function start() {
   async function anticipate(url, intent) {
     if (expired || denied.has(url)) return;
     if (accepted) { if (accepted.to === url && intent !== 'prediction') scheduleAssets(); return; }
-    if (pending || !sampled || !eligible() || document.querySelector('script[type="speculationrules"]')) return;
+    if (pending || !eligible() || document.querySelector('script[type="speculationrules"]')) return;
     pending = true;
     const result = await send({ type: 'PLAN', to: url, viewport, intent });
     pending = false;

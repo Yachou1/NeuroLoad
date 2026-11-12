@@ -65,8 +65,8 @@ export function createAccessController(api,{stopTab,injectTab,clock=()=>Date.now
     if(!hasScope(origin,config)||!await api.permissions.contains({origins:[origin+'/*']}))return{ok:true,status:'permission',mode:config.mode};
     const records=await state(),record=records[tabId],category=classifySite(tab.url);
     if(record?.origin===origin&&record.state==='dom')return{ok:true,status:'protected',origin,mode:config.mode};
-    if(!category)return{ok:true,status:'active',origin,mode:config.mode};
-    if(record?.origin===origin&&record.state==='approved')return{ok:true,status:'approved',origin,category:category.label,expiresAt:record.expiresAt,mode:config.mode,requestId:record.requestId};
+    if(!category)return{ok:true,status:'active',origin,mode:config.mode,learned:Boolean(publicModel.pages[tab.url])};
+    if(record?.origin===origin&&record.state==='approved')return{ok:true,status:'approved',origin,category:category.label,expiresAt:record.expiresAt,mode:config.mode,requestId:record.requestId,learned:Boolean(pruneModel(record.model||EMPTY(),{...config,sensitiveOrigins:[origin]},clock()).pages[tab.url])};
     const pending=await prompt(tabId,config,origin,category,false);
     return{ok:true,status:!pending?'capacity':pending.state==='denied'?'denied':'pending',origin,category:category.label,requestId:pending?.requestId||null,mode:config.mode};
   }

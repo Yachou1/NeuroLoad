@@ -92,3 +92,13 @@ test('a detected form blocks the document without an override',async()=>{
  assert.equal((await h.access.status(1,h.config,empty)).status,'protected');
  assert.equal((await h.access.decide(1,pending.requestId,true,h.config)).ok,false);
 });
+
+test('popup reports a profile only for the current eligible page',async()=>{
+ const h=harness(),url=h.tabs.get(2).url;
+ const model={pages:{[url]:{at:h.now(),viewport:'1200x800@1',documentBytes:1000,resources:[]}},edges:{}};
+ assert.equal((await h.access.status(2,h.config,model)).learned,true);
+ h.tabs.get(2).url=url+'another-page';
+ assert.equal((await h.access.status(2,h.config,model)).learned,false);
+ h.tabs.get(2).url=url+'login';
+ assert.equal((await h.access.status(2,h.config,model)).learned,undefined);
+});
