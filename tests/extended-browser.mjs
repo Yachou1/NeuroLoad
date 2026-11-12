@@ -49,6 +49,22 @@ try{
   await page.mouse.move(1100,700);await page.locator('#target').hover();await page.waitForTimeout(700);
   assert.equal(assets(n).length,2);
  });
+ await check('scrolling before learning does not block hover on a known destination',async()=>{
+  await page.addInitScript(()=>{
+   if(location.pathname!=='/scrolled-source')return;
+   document.addEventListener('DOMContentLoaded',()=>{
+    document.body.style.minHeight='200vh';
+    window.scrollTo(0,20);
+   },{once:true});
+  });
+  const n=await prepare('/scrolled-source');
+  assert.ok(await page.evaluate(()=>scrollY>0));
+  const sourceLearned=await worker.evaluate(async url=>Boolean((await chrome.storage.local.get('model')).model.pages[url]),page.url());
+  assert.equal(sourceLearned,false);
+  await page.locator('#target').hover();
+  await page.waitForTimeout(850);
+  assert.ok(records(n).some(r=>r.path==='/article'));
+ });
  await check('hovering an unknown page does not consume a later known prediction',async()=>{
   const n=await prepare();await page.locator('#unknown').hover();await page.waitForTimeout(350);
   await page.locator('#target').hover();await page.waitForTimeout(850);
